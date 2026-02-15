@@ -13,6 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+plugins {
+  id "org.sonarqube" version "7.1.0.6387"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "kreedaanganam_ghidra"
+    property "sonar.organization", "kreedaanganam"
+  }
+}
+
 apply plugin: 'eclipse'
 
 apply from: 'gradle/root/eclipse.gradle'
